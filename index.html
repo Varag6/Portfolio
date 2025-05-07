@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eureka Design</title>
+    <title>agnesreka Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation -->
     <header id="header">
         <div class="header--container">
-            <a id="logo_lottie">
+            <a id="logo">
                 <img  src="img/logo.svg" alt="Logo">
             </a>
             <nav class="main_menu--container">
@@ -25,7 +24,7 @@
                         <a href="about.html" class="">About</a>
                     </li>
                     <li class="menu-item">
-                        <a href="#footer" onclick="lenis.scrollTo('#footer')" class="">Contact</a>
+                        <a href="#footer" onclick="scrollTo('#footer')" class="">Contact</a>
                     </li>
                 </ul>
             </nav>
@@ -64,87 +63,131 @@
                     </div>
                     <div class="about_services--container">
                         <h3 >Expertises</h3>
-                        <ul>
-                            <li>Interaction Design</li>
-                            <li>UX / UI Design</li>
-                            <li>Product Design</li>
-                            <li>Python</li>
-                            <li>Typescript</li>
-                            <li>CSS</li>
-                            <li>C++</li>
-                            <li>Microcontrollers</li>
-                        </ul>
+                        <table><thead>
+                            <tr>
+                              <th>Skill</th>
+                              <th>Proficiency</th>
+                              <th>Years of Experience</th>
+                            </tr></thead>
+                          <tbody>
+                            <tr>
+                              <td>HTML/CSS</td>
+                              <td>★★★★★</td>
+                              <td>3</td>
+                            </tr>
+                            <tr>
+                              <td>JavaScript</td>
+                              <td>★★★★☆</td>
+                              <td>3</td>
+                            </tr>
+                            <tr>
+                              <td>UX design</td>
+                              <td>★★★★☆</td>
+                              <td>1</td>
+                            </tr>
+                            <tr>
+                              <td>UI design</td>
+                              <td>★★★★★</td>
+                              <td>2</td>
+                            </tr>
+                          </tbody>
+                          </table>
                     </div>
                 </div>
             </section>
+            <section id="portfolio" class="section">
+                <h2>Portfolio</h2>
+                <div class="album">
+                    <div class="responsive-container-block bg">
+                      <div class="responsive-container-block img-cont">
+                        <div class = img-wrapper>
+                            <img class="img" src="img/featured_niu.jpg">
+                            <div class="overlay">NIU Project</div>
+                        </div>
+                        <div class="img-wrapper">
+                            <img class="img" src="img/featured_roadmate.png">
+                            <div class="overlay">NIU Project</div>
+                        </div>
+                        <div class="img-wrapper">   
+                        <img class="img img-last" src="img/projekt3.jpg">
+                        <div class="overlay">NIU Project</div>
+                        </div>
+                      </div>
+                      <div class="responsive-container-block img-cont">
+                        <div class = img-wrapper>
+                            <img class="img img-big" src="img/projekt4.jpg">
+                            <div class="overlay">NIU Project</div>
+                        </div>
+                        <div class="img-wrapper">
+                            <img class="img img-big img-last" src="img/featured_bpgo.jpg">
+                            <div class="overlay">NIU Project</div>
+                        </div>
+                        <div class="img-wrapper">
+                            <img class="img" src="img/featured_kalaka.png">
+                            <div class="overlay">NIU Project</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </section>
+            <!-- Contact Form -->
+            <section id="contact" class="section">
+                <h2>Contact</h2>
+                <form class="contact-form">
+                    <label>Name</label>
+                    <input type="text" placeholder="John Doe">
+                    
+                    <label>Email</label>
+                    <input type="email" placeholder="jhon@email.com">
+                    
+                    <label>Message</label>
+                    <textarea placeholder="Enter your message here..."></textarea>
+                    
+                    <button type="submit">Send</button>
+                </form>
+            </section>
+        
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="footer--wrapper">
+                    <div class="col">
+                        47°29′33″N 19°03′05″E
+                    </div>
+                    <div class="col">
+                        <div class="other-links">
+                    <a href="https://www.instagram.com/va_reka/" class="link" target="_blank">Instagram</a> / <a href="https://www.linkedin.com/in/%C3%A1gnes-r%C3%A9ka-varga-69307b24a/" class="link" target="_blank">Linkedin</a>
+                        </div>
+                    </div>
+                    <div >
+                        Designed and developed by me<br>
+                        ©2025 – All Rights Reserved
+                    </div>
+                </div>
+            </footer>
+            <div class="mobile_menu--wrapper">
+                <div class="overlay"></div>
+                <div class="mobile_menu--container">
+                    <div class="inner">
+                        <nav>
+                            <ul class="mobile_menu">
+                                <li>
+                                    <a href="index.html" class="">Home</a>
+                                </li>
+                                <li>
+                                    <a href="portfolio.html" class="">Projects</a>
+                                </li>
+                                <li>
+                                    <a href="about.html" class="">About</a>
+                                </li>
+                                <li>
+                                    <a href="#footer" onclick="lenis.scrollTo('#footer')" class="">Contact</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="section">
-        <h2>Portfolio</h2>
-        <div class="album">
-            <div class="responsive-container-block bg">
-              <div class="responsive-container-block img-cont">
-                <img class="img" src="img/projekt2.png">
-                <img class="img" src="img/projekt6.png">
-                <img class="img img-last" src="img/projekt3.jpg">
-              </div>
-              <div class="responsive-container-block img-cont">
-                <img class="img img-big" src="img/projekt4.jpg">
-                <img class="img img-big img-last" src="img/projekt5.png">
-                <img class="img" src="img/projekt1.jpg">
-              </div>
-            </div>
-          </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="section">
-        <h2>About</h2>
-        <div class="about-content">
-            <img src="/rectangle-7.svg" alt="About Image">
-            <p>We create stunning designs. Lorem ipsum dolor sit amet...</p>
-        </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section id="testimonials" class="section">
-        <h2>Testimonials</h2>
-        <div class="testimonials-container">
-            <div class="testimonial-card">
-                <h3>"Amazing Team with Lorem Ipsum"</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-            <div class="testimonial-card">
-                <h3>"Big Dreams for lorem ipsum"</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Form -->
-    <section id="contact" class="section">
-        <h2>Contact</h2>
-        <form class="contact-form">
-            <label>Name</label>
-            <input type="text" placeholder="John Doe">
-            
-            <label>Email</label>
-            <input type="email" placeholder="jhon@email.com">
-            
-            <label>Message</label>
-            <textarea placeholder="Enter your message here..."></textarea>
-            
-            <button type="submit">Send</button>
-        </form>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <p>2022 Company</p>
-        <div class="footer-links">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms and Conditions</a>
-        </div>
-    </footer>
-</body>
+<body>
 </html>

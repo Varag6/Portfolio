@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&display=swap');
+
+/* General Styles */
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Mulish",sans-serif;
+  color: #fff;
+  background-color: #111111;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  height: 100%
+}
+
+body.nav-active {
+  overflow: hidden; /*changed from hidden*/
+}
+
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline
+}
+
+h1,h2 {
+  font-family: 'Sulphur Point',sans-serif;
+  text-transform: lowercase;
+  color: #fff;
+  font-weight: 400;
+  font-size: 20px; /*changed from 20px*/
+}
+
+h3 {
+  font-family: "Sulphur Point",sans-serif;
+  letter-spacing: 8px;
+  margin-bottom: 40px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 16px; /*changed from 16px*/
+}
+
+p {
+  font-size: 1rem;
+  color: #8c8c8c
+}
+.intro_text--container p {
+  font-size: 0.5rem; /* Adjust the size as needed */
+}
+
+.noscroll {
+  overflow: hidden
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  transition: .35s all cubic-bezier(.455, .03, .515, .955)
+}
+
+/* Navbar */
+#header {
+  width: 100%;
+  padding: 35px 50px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: ease transform .3s;
+  z-index: 110
+}
+
+#header.hide-navbar {
+  transform: translateY(-100%)
+}
+
+#header .header--container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#header .header--container #logo_lottie {
+  width: 40px;
+  height: auto;
+  display: block;
+}
+
+#header .header--container #logo_lottie svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  fill: #fff
+}
+
+#header .header--container .main_menu--container ul {
+  padding: 0;
+  margin: 0
+}
+
+#header .header--container .main_menu--container ul li {
+  display: inline-block
+}
+
+#header .header--container .main_menu--container ul li a {
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  opacity: .7;
+  padding: 8px 40px;
+  font-size: 14px;
+  transition: .35s all cubic-bezier(.455, .03, .515, .955)
+}
+
+#header .header--container .main_menu--container ul li a:last-child {
+  padding-right: 0
+}
+
+#header .header--container .main_menu--container ul li a:hover {
+  opacity: 1
+}
+
+#header .header--container .main_menu--container ul li a:focus {
+  opacity: 1
+}
+
+#header .header--container .main_menu--container ul li a.is-active {
+  opacity: 1
+}
+
+@media screen and (max-width: 1290px) {
+  #header {
+      padding:35px 40px 0
+  }
+}
+
+
+@media only screen and (max-width: 900px) {
+  #header .main_menu--container {
+      display:none
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #header {
+      padding:30px 25px 0
+  }
+}
+/* Hero Section */
+
+#wrapper.touch .cursor {
+  display: none
+}
+
+#wrapper.touch .cursor__pointer {
+  display: none
+}
+
+#wrapper>section:first-child {
+  margin-top: 112px
+}
+
+.home #wrapper>section:first-child {
+  margin-top: 0
+}
+
+.home_hero--wrapper {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center
+}
+
+.home_hero--wrapper .home_hero--container {
+  width: 100%;
+  position: relative;
+  transform: translateY(40px)
+}
+
+.home_hero--wrapper .hero_text--container {
+  max-width: 70vw;
+  margin: 0 auto;
+  padding: 20px 18px 0;
+  display: flex;
+  justify-content: flex-end;
+  opacity: 1;
+  position: relative;
+  z-index: 2
+}
+
+.home_hero--wrapper .hero_text--container p {
+  color: #fff;
+  opacity: .8;
+  font-size: 22px;
+  line-height: 1.3;
+  font-weight: 400;
+  position: relative;
+  max-width: 431px;
+}
+
+.simple-title {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Sulphur Point", sans-serif; /* Including a fallback font */
+  font-size: 220px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: lowercase;
+  margin: 0; /* Remove default margin if needed */
+  padding: 0;
+  text-align: center; /* Center the text */
+}
+
+/* Sections */
+.section {
+    padding: 80px 50px;
+    text-align: center;
+}
+
+/* Portfolio */
+.portfolio-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.portfolio-grid img {
+    width: 300px;
+    height: auto;
+}
+
+.album .responsive-container-block {
+    min-height: 75px;
+    height: fit-content;
+    width: 100%;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    justify-content: flex-start;
+  }
+  
+  .album .responsive-container-block.bg {
+    max-width: 1320px;
+    margin: 0 0 0 0;
+    justify-content: center;
+  }
+  
+  .album .img {
+    width: 100%;
+    margin: 0 0 20px 0;
+  }
+  
+  
+  .album .responsive-container-block.img-cont {
+    flex-direction: column;
+    max-width: 33%;
+    margin: 0 0 0 0;
+    height: 100%;
+  }
+  
+  .album .img.img-big {
+    height: 50%;
+    margin: 0 0 16px 0;
+  }
+  
+  @media (max-width: 1024px) {
+    .album .img {
+      margin: 0 0 18px 0;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .album .img {
+      max-width: 100%;
+      margin: 0 0 18px 0;
+    }
+  
+    .album .responsive-container-block.bg {
+      max-width: 700px;
+    margin: 0 0 0 0;
+    justify-content: center;
+    }
+  
+    .album .responsive-container-block.img-cont {
+      flex-direction: column;
+      max-width: 33%;
+      margin: 0 0 0 0;
+      height: 100%;
+    }
+  
+  }
+  
+  @media (max-width: 500px) {
+    .album .img {
+      max-width: 94%;
+      margin: 0 0 25px 0;
+    }
+  
+    .album .responsive-container-block.img-cont {
+      flex-direction: row;
+      align-items: center;
+      padding: 10px 10px 10px 10px;
+    }
+  
+    .album .img.img-big {
+      max-width: 94%;
+      margin: 0 0 25px 0;
+    }
+  
+    .album .img.img-last {
+      margin: 0 0 5px 0;
+    }
+  }
+
+/* About Section */
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.about-content img {
+    width: 400px;
+}
+
+/* Testimonials */
+.testimonials-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.testimonial-card {
+    background: #181818;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+/* Contact Form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 50%;
+    padding: 10px;
+    background: #333;
+    border: none;
+    color: white;
+}
+
+.contact-form button {
+    background: white;
+    color: black;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #181818;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}

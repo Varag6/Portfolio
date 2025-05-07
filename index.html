@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eureka Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header id="header">
+        <div class="header--container">
+            <a id="logo_lottie">
+                <img  src="img/logo.svg" alt="Logo">
+            </a>
+            <nav class="main_menu--container">
+                <ul>
+                    <li class="menu-item">
+                        <a href="index.html" class="">Home</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="portfolio.html" class="">Projects</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="about.html" class="">About</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#footer" onclick="lenis.scrollTo('#footer')" class="">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="mobile_menu--button">
+                <button class="hamburger_btn" href="javascript:void(0);" aria-label="Open mobile menu">
+                    <div class="hamburger_icon">
+                        <div></div>
+                        <div></div>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main id="wrapper">
+        <div class="container">
+            <section class="home_hero--wrapper">
+                <div class="home_hero--container">
+                    <div class="title-container">
+                        <h1 class="simple-title">agnesreka</h1>
+                    </div>
+    
+                    <div class="hero_text--container">
+                        <p class="title">Interaction designer in the making</p>
+                    </div>
+                </div>
+                <!--<div class="circular_text--container"></div>-->
+            </section>
+            <section class="default_row--container intro">
+                <div class="inner--container">
+                    <div class="intro_text--container">
+                        <p>
+                            I have a strong background in biotechnology and electronics.  This mix allows me to approach problems from different angles and push the boundaries of what design can be.<br><br>
+                            I’m currently studyind at Moholy-Nagy University of Art and Design in Budapest, where I’m learning to combine my technical skills with my passion for design. I’m always looking for new challenges and opportunities to grow as a designer.
+                        </p>
+                        <a class="lovely_button link" href="about.html" target="_self" data-delay="0"><span class="text">More about me</span></a>
+                    </div>
+                    <div class="about_services--container">
+                        <h3 >Expertises</h3>
+                        <ul>
+                            <li>Interaction Design</li>
+                            <li>UX / UI Design</li>
+                            <li>Product Design</li>
+                            <li>Python</li>
+                            <li>Typescript</li>
+                            <li>CSS</li>
+                            <li>C++</li>
+                            <li>Microcontrollers</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+    </main>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section">
+        <h2>Portfolio</h2>
+        <div class="album">
+            <div class="responsive-container-block bg">
+              <div class="responsive-container-block img-cont">
+                <img class="img" src="img/projekt2.png">
+                <img class="img" src="img/projekt6.png">
+                <img class="img img-last" src="img/projekt3.jpg">
+              </div>
+              <div class="responsive-container-block img-cont">
+                <img class="img img-big" src="img/projekt4.jpg">
+                <img class="img img-big img-last" src="img/projekt5.png">
+                <img class="img" src="img/projekt1.jpg">
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2>About</h2>
+        <div class="about-content">
+            <img src="/rectangle-7.svg" alt="About Image">
+            <p>We create stunning designs. Lorem ipsum dolor sit amet...</p>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="section">
+        <h2>Testimonials</h2>
+        <div class="testimonials-container">
+            <div class="testimonial-card">
+                <h3>"Amazing Team with Lorem Ipsum"</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="testimonial-card">
+                <h3>"Big Dreams for lorem ipsum"</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact" class="section">
+        <h2>Contact</h2>
+        <form class="contact-form">
+            <label>Name</label>
+            <input type="text" placeholder="John Doe">
+            
+            <label>Email</label>
+            <input type="email" placeholder="jhon@email.com">
+            
+            <label>Message</label>
+            <textarea placeholder="Enter your message here..."></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>2022 Company</p>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms and Conditions</a>
+        </div>
+    </footer>
+</body>
+</html>

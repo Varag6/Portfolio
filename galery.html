@@ -1,66 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="description"
-        content="Portfolio website" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-        <header id="header">
-            <div class="header--container">
-                <a>
-                    <img src="img/logo.svg" alt="Logo">
-                </a>
-                <nav class="main_menu--container">
-                    <ul>
-                        <li class="menu-item">
-                            <a href="index.html" class="">Home</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="portfolio.html" class="">Projects</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="about.html" class="">About</a>
-                        </li>
-                    <!--<li class="menu-item">
-                        <a href="/playground" class="">Playground</a>
-                    </li> -->
-                        <li class="menu-item">
-                            <a href="#footer" onclick="lenis.scrollTo('#footer')" class="">Contact</a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="mobile_menu--button">
-                    <button class="hamburger_btn" href="javascript:void(0);" aria-label="Open mobile menu">
-                        <div class="hamburger_icon">
-                            <div></div>
-                            <div></div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>agnesreka Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <div class="header--container">
+            <a id="logo">
+                <img  src="img/logo.svg" alt="Logo">
+            </a>
+            <nav class="main_menu--container">
+                <ul>
+                    <li class="menu-item">
+                        <a href="index.html" class="">Home</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="galery.html" class="">Projects</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="about.html" class="">About</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#footer" onclick="scrollTo('#footer')" class="">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="mobile_menu--button">
+                <button class="hamburger_btn" href="javascript:void(0);" aria-label="Open mobile menu">
+                    <div class="hamburger_icon">
+                        <div></div>
+                        <div></div>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main id="wrapper">
+        <div class="container">
+            <section id="portfolio" class="section">
+                <h2>Portfolio</h2>
+                <div class="album">
+                    <div class="responsive-container-block bg">
+                      <div class="responsive-container-block img-cont">
+                        <div class = img-wrapper>
+                            <img class="img" src="img/featured_niu.jpg">
+                            <div class="overlay">NIU Project</div>
                         </div>
-                    </button>
+                        <div class="img-wrapper">
+                            <img class="img" src="img/featured_roadmate.png">
+                            <div class="overlay">NIU Project</div>
+                        </div>
+                        <div class="img-wrapper">   
+                        <img class="img img-last" src="img/projekt3.jpg">
+                        <div class="overlay">NIU Project</div>
+                        </div>
+                      </div>
+                      <div class="responsive-container-block img-cont">
+                        <div class = img-wrapper>
+                            <img class="img img-big" src="img/projekt4.jpg">
+                            <div class="overlay">NIU Project</div>
+                        </div>
+                        <div class="img-wrapper">
+                            <img class="img img-big img-last" src="img/featured_bpgo.jpg">
+                            <div class="overlay">NIU Project</div>
+                        </div>
+                        <div class="img-wrapper">
+                            <img class="img" src="img/featured_kalaka.png">
+                            <div class="overlay">NIU Project</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </section>
+            <!-- Contact Form -->
+            <section id="contact" class="section">
+                <h2>Contact</h2>
+                <form class="contact-form">
+                    <label>Name</label>
+                    <input type="text" placeholder="John Doe">
+                    
+                    <label>Email</label>
+                    <input type="email" placeholder="jhon@email.com">
+                    
+                    <label>Message</label>
+                    <textarea placeholder="Enter your message here..."></textarea>
+                    
+                    <button type="submit">Send</button>
+                </form>
+            </section>
+        
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="footer--wrapper">
+                    <div class="col">
+                        47°29′33″N 19°03′05″E
+                    </div>
+                    <div class="col">
+                        <div class="other-links">
+                    <a href="https://www.instagram.com/va_reka/" class="link" target="_blank">Instagram</a> / <a href="https://www.linkedin.com/in/%C3%A1gnes-r%C3%A9ka-varga-69307b24a/" class="link" target="_blank">Linkedin</a>
+                        </div>
+                    </div>
+                    <div >
+                        Designed and developed by me<br>
+                        ©2025 – All Rights Reserved
+                    </div>
+                </div>
+            </footer>
+            <div class="mobile_menu--wrapper">
+                <div class="overlay"></div>
+                <div class="mobile_menu--container">
+                    <div class="inner">
+                        <nav>
+                            <ul class="mobile_menu">
+                                <li>
+                                    <a href="index.html" class="">Home</a>
+                                </li>
+                                <li>
+                                    <a href="galery.html" class="">Projects</a>
+                                </li>
+                                <li>
+                                    <a href="about.html" class="">About</a>
+                                </li>
+                                <li>
+                                    <a href="#footer" onclick="lenis.scrollTo('#footer')" class="">Contact</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
             </div>
-        </header>
-        <main>
-            <h1>Lets build somthing that matters.</h1>
-            <section id="galery">
-                <h2>Galery</h2>
-                <p>Check out some of my work!</p>
-                <img src="img/galery1.jpg" alt="Galery1" width="200">
-                <img src="img/galery2.jpg" alt="Galery2" width="200">
-                <img src="img/galery3.jpg" alt="Galery3" width="200">
-                <img src="img/galery4.jpg" alt="Galery4" width="200">
-                <img src="img/galery5.jpg" alt="Galery5" width="200">
-                <img src="img/galery6.jpg" alt="Galery6" width="200">
-                <h2>Find me on</h2>
-                <p>Instagram: @letsbuild</p>
-                <p>Twitter: @letsbuild</p>
-                <p>LinkedIn: @letsbuild</p>
-            </section>
-        </main>
-        <footer>
-            <p>&copy; Heureka</p>
-        </footer>
-    </body>
+        </div>
+    </main>
+<body>
 </html>
